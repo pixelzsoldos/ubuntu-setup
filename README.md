@@ -42,9 +42,6 @@ chmod +x ubuntu-setup.sh
 - FileZilla
 - Inkscape
 - Krita
-- DBeaver
-- Postman
-- Etcher
 - Zsh shell
 - Node.js és NPM
 - Neovim szövegszerkesztő
@@ -56,6 +53,8 @@ chmod +x ubuntu-setup.sh
 - RustDesk távoli asztal
 - SuperProductivity
 - Steam játékplatform
+- DBeaver CE
+- Postman
 
 ### Egyéb
 - NVM (Node Version Manager)

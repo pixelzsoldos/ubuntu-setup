@@ -20,9 +20,6 @@ sudo apt install -y \
     filezilla \
     inkscape \
     krita \
-    dbeaver \
-    postman \
-    etcher \
     zsh \
     npm \
     nodejs \
@@ -34,7 +31,7 @@ sudo apt install -y ./synaptics-repository-keyring.deb displaylink-driver
 rm synaptics-repository-keyring.deb
 
 # Snap alkalmazások telepítése
-sudo snap install brave notesnook element-desktop rustdesk superproductivity steam
+sudo snap install brave notesnook element-desktop rustdesk superproductivity steam dbeaver-ce postman
 
 # Fejlesztői eszközök telepítése
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
