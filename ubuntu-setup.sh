@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Synaptics kulcs letöltése és telepítése
-curl -O https://www.synaptics.com/sites/default/files/Ubuntu/pool/stable/main/all/synaptics-repository-keyring.deb
-sudo apt install -y ./synaptics-repository-keyring.deb
-
 # Librewolf telepítése az extrepo segítségével
 sudo apt update
 sudo apt install -y extrepo
@@ -13,7 +9,7 @@ sudo apt install -y librewolf
 
 # Alkalmazások telepítése apt-tal
 sudo apt install -y \
-    displaylink-driver \
+curl
     vlc \
     git \
     audacity \
@@ -30,6 +26,11 @@ sudo apt install -y \
     zsh \
     npm \
     nodejs
+
+# Synaptics kulcs letöltése és telepítése
+curl -O https://www.synaptics.com/sites/default/files/Ubuntu/pool/stable/main/all/synaptics-repository-keyring.deb
+sudo apt install -y ./synaptics-repository-keyring.deb
+sudo apt install -y displaylink-driver
 
 # NVM telepítése
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash

@@ -1,0 +1,7 @@
+# Rendszerfájlok
+.DS_Store
+Thumbs.db
+
+# Ideiglenes fájlok
+*.tmp
+*.bak 
