@@ -1,15 +1,17 @@
 #!/bin/bash
 
-# Librewolf telepítése az extrepo segítségével
+# Rendszer frissítése
 sudo apt update
+
+# Librewolf repo hozzáadása és telepítése
 sudo apt install -y extrepo
 sudo extrepo enable librewolf
 sudo apt update
-sudo apt install -y librewolf
 
-# Alkalmazások telepítése apt-tal
+# APT csomagok telepítése
 sudo apt install -y \
-curl
+    librewolf \
+    curl \
     vlc \
     git \
     audacity \
@@ -18,33 +20,24 @@ curl
     filezilla \
     inkscape \
     krita \
-    fontbase \
     dbeaver \
     postman \
-    xnviewmp \
     etcher \
     zsh \
     npm \
-    nodejs
+    nodejs \
+    neovim
 
-# Synaptics kulcs letöltése és telepítése
+# Synaptics DisplayLink driver telepítése
 curl -O https://www.synaptics.com/sites/default/files/Ubuntu/pool/stable/main/all/synaptics-repository-keyring.deb
-sudo apt install -y ./synaptics-repository-keyring.deb
-sudo apt install -y displaylink-driver
+sudo apt install -y ./synaptics-repository-keyring.deb displaylink-driver
+rm synaptics-repository-keyring.deb
 
-# NVM telepítése
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
-
-# Snap-alapú alkalmazások telepítése
+# Snap alkalmazások telepítése
 sudo snap install brave notesnook element-desktop rustdesk superproductivity steam
 
-# Cursor AI telepítése
-curl -fsSL https://gist.githubusercontent.com/msanjeevkumar/edbfebbae976ab7b2cb2e4f22cb6b374/raw/005490f3c968b68645bb649612cb5303fdd4a48e/cursor_setup_and_update.sh | bash
-
-# Zed telepítése
+# Fejlesztői eszközök telepítése
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 curl -fsSL https://zed.dev/install.sh | sh
-
-# Takarítás
-rm synaptics-repository-keyring.deb
 
 echo "Telepítés kész! Újraindítás ajánlott."

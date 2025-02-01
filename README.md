@@ -9,7 +9,7 @@ Ez a szkript automatizálja az Ubuntu rendszer kezdeti beállítását és a leg
 - 💻 Fejlesztői eszközök (Git, Node.js, NVM, Postman, DBeaver)
 - 🎨 Grafikai alkalmazások (Inkscape, Krita)
 - 🎵 Multimédia alkalmazások (VLC, Audacity)
-- 📝 Szövegszerkesztők (Zed, Cursor AI)
+- 📝 Szövegszerkesztők (Zed, Neovim)
 - 🔧 Rendszereszközök és egyéb alkalmazások
 
 ## 🚀 Használat
@@ -32,6 +32,7 @@ chmod +x ubuntu-setup.sh
 ## 📋 Telepített alkalmazások listája
 
 ### APT csomagok
+- Librewolf böngésző
 - DisplayLink illesztőprogram
 - VLC médialejátszó
 - Git verziókezelő
@@ -41,13 +42,12 @@ chmod +x ubuntu-setup.sh
 - FileZilla
 - Inkscape
 - Krita
-- FontBase
 - DBeaver
 - Postman
-- XnViewMP
 - Etcher
 - Zsh shell
 - Node.js és NPM
+- Neovim szövegszerkesztő
 
 ### Snap csomagok
 - Brave böngésző
@@ -59,7 +59,6 @@ chmod +x ubuntu-setup.sh
 
 ### Egyéb
 - NVM (Node Version Manager)
-- Cursor AI fejlesztői környezet
 - Zed szövegszerkesztő
 
 ## ⚠️ Megjegyzések
