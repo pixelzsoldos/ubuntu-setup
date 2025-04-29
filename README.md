@@ -1,75 +1,78 @@
-# 🐧 Ubuntu Telepítő Szkript
+# Ubuntu Setup Script
 
-Ez a szkript automatizálja az Ubuntu rendszer kezdeti beállítását és a legfontosabb alkalmazások telepítését.
+This script automates the setup of an Ubuntu system by installing essential applications, developer tools, and utilities.
 
-## ✨ Funkciók
+## Features
 
-- 🔑 Synaptics illesztőprogram telepítése
-- 🦊 Librewolf böngésző telepítése
-- 💻 Fejlesztői eszközök (Git, Node.js, NVM, Postman, DBeaver)
-- 🎨 Grafikai alkalmazások (Inkscape, Krita)
-- 🎵 Multimédia alkalmazások (VLC, Audacity)
-- 📝 Szövegszerkesztők (Zed, Neovim)
-- 🔧 Rendszereszközök és egyéb alkalmazások
+- Updates the system using `apt`.
+- Installs APT packages:
+  - `curl`, `vlc`, `git`, `audacity`, `gnome-shell-extension-manager`, `gnome-calendar`, `gnome-weather`, `qbittorrent`, `filezilla`, `inkscape`, `zsh`, `npm`, `nodejs`.
+- Installs Snap applications:
+  - `brave`, `notesnook`, `element-desktop`, `rustdesk`, `superproductivity`, `steam`, `dbeaver-ce`, `postman`, `discord`, `code`, `spotify`, `slack`.
+- Installs GNOME Shell Extensions:
+  - Dash to Dock
+  - Weather O'Clock
+- Installs developer tools:
+  - `nvm` (Node Version Manager).
+  - `zed` (a lightweight code editor).
 
-## 🚀 Használat
+## Usage
 
-1. Töltsd le a szkriptet:
-```bash
-wget https://raw.githubusercontent.com/FELHASZNÁLÓNÉV/REPO/main/ubuntu-setup.sh
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/ubuntu-setup.git
+   cd ubuntu-setup
+   ```
 
-2. Adj futtatási jogot a szkriptnek:
-```bash
-chmod +x ubuntu-setup.sh
-```
+## Installed Applications List
 
-3. Futtasd a szkriptet:
-```bash
-./ubuntu-setup.sh
-```
+### APT Packages
+- `curl`
+- `vlc`
+- `git`
+- `audacity`
+- `gnome-shell-extension-manager`
+- `gnome-calendar`
+- `gnome-weather`
+- `qbittorrent`
+- `filezilla`
+- `inkscape`
+- `zsh`
+- `npm`
+- `nodejs`
 
-## 📋 Telepített alkalmazások listája
+### Snap Applications
+- `brave`
+- `notesnook`
+- `element-desktop`
+- `rustdesk`
+- `superproductivity`
+- `steam`
+- `dbeaver-ce`
+- `postman`
+- `discord`
+- `code`
+- `spotify`
+- `slack`
 
-### APT csomagok
-- Librewolf böngésző
-- DisplayLink illesztőprogram
-- VLC médialejátszó
-- Git verziókezelő
-- Audacity hangszerkesztő
-- GNOME Shell Extension Manager
-- qBittorrent
-- FileZilla
-- Inkscape
-- Krita
-- Zsh shell
-- Node.js és NPM
-- Neovim szövegszerkesztő
+### GNOME Shell Extensions
+- Dash to Dock
+- Weather O'Clock
 
-### Snap csomagok
-- Brave böngésző
-- Notesnook jegyzetelő
-- Element Desktop
-- RustDesk távoli asztal
-- SuperProductivity
-- Steam játékplatform
-- DBeaver CE
-- Postman
+### Other
+- `nvm` (Node Version Manager)
+- `zed` (a lightweight code editor)
 
-### Egyéb
-- NVM (Node Version Manager)
-- Zed szövegszerkesztő
+## Notes
 
-## ⚠️ Megjegyzések
+- It is recommended to restart the system after running the script.
+- Ensure you have a stable internet connection during the installation process.
+- Administrative privileges are required for the installation.
 
-- A szkript futtatása után ajánlott a rendszer újraindítása
-- Győződj meg róla, hogy stabil internetkapcsolattal rendelkezel a telepítés során
-- A telepítés során rendszergazdai jogosultságok szükségesek
+## Contribution
 
-## 🤝 Közreműködés
+If you find any issues or have suggestions for improvement, feel free to open an issue or submit a pull request!
 
-Ha hibát találsz vagy fejlesztési javaslatod van, nyugodtan nyiss egy issue-t vagy küldj egy pull requestet!
+## License
 
-## 📄 Licenc
-
-Ez a projekt MIT licenc alatt áll. További részletekért lásd a LICENSE fájlt.
+This project is licensed under the MIT License. For more details, see the LICENSE file.
