@@ -6,15 +6,10 @@ This script automates the setup of an Ubuntu system by installing essential appl
 
 - Updates the system using `apt`.
 - Installs APT packages:
-  - `curl`, `vlc`, `git`, `audacity`, `gnome-shell-extension-manager`, `gnome-calendar`, `gnome-weather`, `qbittorrent`, `filezilla`, `inkscape`, `zsh`, `npm`, `nodejs`.
+  - `curl`, `vlc`, `git`, `audacity`, `gnome-shell-extension-manager`, `gnome-calendar`, `gnome-weather`, `qbittorrent`, `filezilla`, `inkscape`, `zsh`, `npm`, `nodejs`, `dosbox`, `retroarch`, `keepassxc`.
 - Installs Snap applications:
-  - `brave`, `notesnook`, `element-desktop`, `rustdesk`, `superproductivity`, `steam`, `dbeaver-ce`, `postman`, `discord`, `code`, `spotify`, `slack`.
-- Installs GNOME Shell Extensions:
-  - Dash to Dock
-  - Weather O'Clock
-- Installs developer tools:
-  - `nvm` (Node Version Manager).
-  - `zed` (a lightweight code editor).
+  - `brave`, `notesnook`, `element-desktop`, `rustdesk`, `superproductivity`, `steam`, `dbeaver-ce`, `postman`, `discord`, `code`, `spotify`, `slack`, `obs-studio`, `signal-desktop`, `session-desktop`, `telegram-desktop`, `cryptomator`.
+- Installs Google Chrome.
 
 ## Usage
 
@@ -23,6 +18,18 @@ This script automates the setup of an Ubuntu system by installing essential appl
    git clone https://github.com/your-username/ubuntu-setup.git
    cd ubuntu-setup
    ```
+
+2. Make the script executable:
+   ```bash
+   chmod +x ubuntu-setup.sh
+   ```
+
+3. Run the script:
+   ```bash
+   ./ubuntu-setup.sh
+   ```
+
+4. Restart your system after the installation is complete.
 
 ## Installed Applications List
 
@@ -37,9 +44,14 @@ This script automates the setup of an Ubuntu system by installing essential appl
 - `qbittorrent`
 - `filezilla`
 - `inkscape`
+- `gimp`
+- `gnome-tweaks`
 - `zsh`
 - `npm`
 - `nodejs`
+- `dosbox`
+- `retroarch`
+- `keepassxc`
 
 ### Snap Applications
 - `brave`
@@ -54,14 +66,14 @@ This script automates the setup of an Ubuntu system by installing essential appl
 - `code`
 - `spotify`
 - `slack`
-
-### GNOME Shell Extensions
-- Dash to Dock
-- Weather O'Clock
+- `obs-studio`
+- `signal-desktop`
+- `session-desktop`
+- `telegram-desktop`
+- `cryptomator`
 
 ### Other
-- `nvm` (Node Version Manager)
-- `zed` (a lightweight code editor)
+- Google Chrome
 
 ## Notes
 
